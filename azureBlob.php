@@ -5,9 +5,9 @@
 	use MicrosoftAzure\Storage\Blob\BlobRestProxy;
 	use MicrosoftAzure\Storage\Common\ServiceException;
 	use MicrosoftAzure\Storage\Blob\Models\ListBlobsOptions;
-	$connectionString = "DefaultEndpointsProtocol=https;AccountName=marfgold1;AccountKey=6T+KopPWaPwpkYzDWn08bxZZKzm29Bqrj+QK/PKxTmU2nU/euKrEA71jhzksbEEwqaBsr269iS/3mGK31HNB9w==;EndpointSuffix=core.windows.net";
+	$connectionString = "DefaultEndpointsProtocol=https;AccountName=pandapolblob123;AccountKey=EqD99qP1p+CLpx52cyKZkHao/tT4/vOU2/V1F7/riM2C5kEnMABp3d9BP+WKbBF1GS1um9xT00aIWJGQOYdciA==;";
 	$blobClient = BlobRestProxy::createBlobService($connectionString);
-	$containerName = "images";
+	$containerName = "pandapol123";
 	if($_POST["action"] == "upload"){
 		if($_POST["format"] == "url"){
 			$fileToUpload = $_POST["imageUrl"];
